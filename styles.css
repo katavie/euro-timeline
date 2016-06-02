@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #192238;
+}
+
+h1, h2 {
+    font-family: Raleway;
+    font-weight: 800;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+section {
+    border-top: 1px solid #aaa;
+    background-color: #fff;
+}
+
+/* RIBBON */
+#ribbon {
+	padding: .38em .85em .34em;
+	margin: 5% 0 0;
+	position: relative;
+	color: #000;
+	font: 800 4rem Raleway;
+	text-align: center;
+	background: #8ed2a9;
+    display: inline-block;
+}
+
+#ribbon:before, #ribbon:after {
+	content: "";
+	width:.2em;
+	bottom:-.5em;
+	position: absolute;
+	border: .9em solid #69c48d;
+	z-index: -2;
+}
+
+#ribbon:before {
+	left: -1.35em;
+	border-right-width: .75em;
+	border-left-color: transparent;
+}
+
+#ribbon:after {
+	right: -1.35em;
+	border-left-width: .75em;
+	border-right-color: transparent;
+}
+
+#content:before, #content:after {
+	content:"";
+	bottom: -.5em;
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #398f5a transparent transparent transparent;
+	z-index: -1;
+}
+
+#content:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+}
+
+#content:after {
+    right: 0;
+    border-width: .5em .5em 0 0;
+}
