@@ -5,38 +5,72 @@
 }
 
 body {
-    background-color: #192238;
+    background-color: #224; /* sections have their own colors, so this is the header bg */
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Raleway;
     font-weight: 800;
 }
 
 header {
     text-align: center;
-    padding-bottom: 5rem;
+    padding: 5rem 0 10rem;
 }
 
 header h1 {
     text-transform: uppercase;
+	color: #111;
+	font: 800 4.25rem Raleway;
+	text-align: center;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #eee;
 }
 
 section {
     border-top: 1px solid #aaa;
     background-color: #fff;
+    padding: 3.5rem 2.5rem 2.5rem 10rem;
+    height: 100vh;
+}
+
+#contents {
+    position: absolute;
+    height: 0;
+}
+
+#contents li {
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(90deg, transparent 47.5%, #aaa 47.5%, #aaa 52.5%, transparent 52.5%, transparent);
+    text-align: center;
+}
+
+#contents a {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 15% 10%;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    font: normal 1.85rem/1em Lora;
+    text-decoration: none;
+    background: #eee;
 }
 
 /* RIBBON */
 #ribbon {
 	padding: .38em .85em .34em;
-	margin: 5% 0 0;
-	position: relative;
-	color: #000;
-	font: 800 4rem Raleway;
-	text-align: center;
-	background: #8ed2a9;
+	margin: 1rem;
+	background: #ffbb80;
     display: inline-block;
+    position: relative;
 }
 
 #ribbon:before, #ribbon:after {
@@ -44,7 +78,7 @@ section {
 	width:.2em;
 	bottom:-.5em;
 	position: absolute;
-	border: .9em solid #69c48d;
+	border: .9em solid #ffa04d;
 	z-index: -2;
 }
 
@@ -66,7 +100,7 @@ section {
 	position: absolute;
 	display: block;
 	border-style: solid;
-	border-color: #398f5a transparent transparent transparent;
+	border-color: #f70 transparent transparent transparent;
 	z-index: -1;
 }
 
