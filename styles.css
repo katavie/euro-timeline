@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #224; /* sections have their own colors, so this is the header bg */
+}
+
+h1, h2, h3 {
+    font-family: Raleway;
+    font-weight: 800;
+}
+
+header {
+    text-align: center;
+    padding-top: 7.5rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+	color: #111;
+	font: 800 4.25rem Raleway;
+	text-align: center;
+}
+
+.slider {
+    width: 80%;
+    margin: 7.5rem auto;
+}
+
+.slider li {
+    background-color: #eee;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.slider a {
+    text-decoration: none;
+    font: 800 1.25rem/1em Raleway;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #eee;
+}
+
+section {
+    border-top: 1px solid #aaa;
+    background-color: #fff;
+    padding: 3.5rem 2.5rem 2.5rem 10rem;
+    height: 100vh;
+}
+
+#contents {
+    position: absolute;
+    height: 0;
+}
+
+#contents li {
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(90deg, transparent 47.5%, #aaa 47.5%, #aaa 52.5%, transparent 52.5%, transparent);
+    text-align: center;
+}
+
+#contents a {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 15% 10%;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    font: normal 1.85rem/1em Lora;
+    text-decoration: none;
+    background: #eee;
+}
+
+.summary {
+    font: normal 1.35rem/1.35em Lora;
+    margin: 1rem 0;
+    max-width: 50%;
+}
+
+/* RIBBON */
+#ribbon {
+	padding: .38em .85em .34em;
+	margin: 1rem;
+	background: #ffbb80;
+    display: inline-block;
+    position: relative;
+}
+
+#ribbon:before, #ribbon:after {
+	content: "";
+	width:.2em;
+	bottom:-.5em;
+	position: absolute;
+	border: .9em solid #ffa04d;
+	z-index: -2;
+}
+
+#ribbon:before {
+	left: -1.35em;
+	border-right-width: .75em;
+	border-left-color: transparent;
+}
+
+#ribbon:after {
+	right: -1.35em;
+	border-left-width: .75em;
+	border-right-color: transparent;
+}
+
+#content:before, #content:after {
+	content:"";
+	bottom: -.5em;
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #f70 transparent transparent transparent;
+	z-index: -1;
+}
+
+#content:before {
+    left: 0;
+    border-width: .5em 0 0 .5em;
+}
+
+#content:after {
+    right: 0;
+    border-width: .5em .5em 0 0;
+}
