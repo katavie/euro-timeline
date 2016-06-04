@@ -8,13 +8,41 @@
     </head>
 
     <body>
-        <!--TODO: scroll-to-sticky sidebar timeline, similar to bootstrap components page-->
-
         <header class="fullpage">
             <h1 id="ribbon">
                 <span id="content">World History Timeline</span>
             </h1>
             <h3 id="subtitle">Katherine Huang | June 2016</h3>
+
+            <nav>
+                <ul class="slider">
+                    <li><a href="#01">476</a></li>
+                    <li><a href="#02">622</a></li>
+                    <li><a href="#03">800</a></li>
+                    <li><a href="#04">900s</a></li>
+                    <li><a href="#05">1054</a></li>
+                    <li><a href="#06">1096</a></li>
+                    <li><a href="#07">1215</a></li>
+                    <li><a href="#08">1324</a></li>
+                    <li><a href="#09">1300s</a></li>
+                    <li><a href="#10">Joan</a></li>
+                    <li><a href="#11">print</a></li>
+                    <li><a href="#12">1492</a></li>
+                    <li><a href="#13">David</a></li>
+                    <li><a href="#14">Theses</a></li>
+                    <li><a href="#15">Magellan</a></li>
+                    <li><a href="#16">Galileo</a></li>
+                    <li><a href="#17">EngCiv</a></li>
+                    <li><a href="#18">Edict</a></li>
+                    <li><a href="#19">Glory</a></li>
+                    <li><a href="#20">Locke</a></li>
+                    <li><a href="#21">Montesq</a></li>
+                    <li><a href="#22">1789</a></li>
+                    <li><a href="#23">terror</a></li>
+                    <li><a href="#24">napleone</a></li>
+                    <li><a href="#25">communist</a></li>
+                </ul>
+            </nav>
         </header>
 
         <aside id="contents">
@@ -53,6 +81,7 @@
             https://image.freepik.com/free-vector/rome-illustration_23-2147524199.jpg
             http://thumbs.dreamstime.com/t/rome-city-skyline-black-white-silhouette-vector-illustration-simple-flat-concept-tourism-presentation-banner-placard-63485062.jpg
             -->
+            <p class="summary">The gradual decline of the Roman Empire was marked with political instability as emperors were assassinated quickly after taking the throne. Reforms by Emperors Diocletian and Constantine failed to solve the socioeconomic problems threatening the empire. In 476, Odoacer, a Germanic leader, expelled the Roman emperor, signalling the formal “fall” of the Rome to foreign invaders.</p>
         </section>
         <section class="fullpage" id="02">
             <h2>Muhammad's Hijra</h2>
@@ -128,7 +157,17 @@
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="slick.js"></script>
         <script>
+        $(document).ready(function(){
+          $('.slider').slick({
+            slidesToShow: 8,
+            slidesToScroll: 4,
+            // variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 2000
+          });
+        });
         </script>
     </body>
 </html>
