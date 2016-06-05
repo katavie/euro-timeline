@@ -7,8 +7,9 @@ $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("demo_ajax_json.js", function(result){
             var data = result;
-            var obj = data.object;
-            $.each(data, function(){
+            var obj = JSON.parse(data);
+
+            $.each(obj, function(){
                 $("div").append("Name: " + obj.firstName + obj.lastName + "<br>");
             });
         });
