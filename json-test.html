@@ -7,15 +7,17 @@ $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("demo_ajax_json.js", function(result){
             var data = result;
+            var obj = data.object;
             $.each(data, function(){
-                $("div").append("Name: " + data.firstName + data.lastName);
+                $("div").append("Name: " + obj.firstName + obj.lastName + "<br>");
             });
         });
 
         $.getJSON("data.json", function(result){
             var data = result;
+            var obj = data.object;
             $.each(data, function(){
-                $("div").append("Event: " + data.event + "<br>Summary: " + data.summary + "<br><br>");
+                $("div").append("Event: " + obj.event + "<br>Summary: " + obj.summary + "<br><br>");
             });
         });
     });
