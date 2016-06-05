@@ -175,14 +175,12 @@
             autoplaySpeed: 3000
           });
 
-          $("button").click(function(){
-		    $.getJSON("data.js", function(result){
-		      for (var i = 0; i < result.length; i++){
-		        var string = JSON.stringify(result[i]);
-		        var parsed = JSON.parse(string);
-		        console.log("Event " + i + " is " + parsed.event + ".");
-		      }
-		    });
+          $.getJSON("data.js", function(result){
+            for (var i = 0; i < result.length; i++){
+              var string = JSON.stringify(result[i]);
+              var parsed = JSON.parse(string);
+              console.log("Event " + i + " is " + parsed.event + ".");
+            }
           });
         });
         </script>
