@@ -6,14 +6,16 @@
 $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("demo_ajax_json.js", function(result){
-            $.each(result, function(i, field){
-                $("div").append(i + ": " + field + "<br>");
+            var data = result;
+            $.each(data, function(){
+                $("div").append("Name: " + data.firstName + data.lastName);
             });
         });
 
         $.getJSON("data.json", function(result){
-            $.each(result, function(i, field){
-                $("div").append(i + ": " + field + "<br>");
+            var data = result;
+            $.each(data, function(){
+                $("div").append("Event: " + data.event + "<br>Summary: " + data.summary + "<br><br>");
             });
         });
     });
