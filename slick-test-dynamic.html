@@ -25,8 +25,15 @@
         <script src="slick.js"></script>
         <script>
         $(document).ready(function(){
-          for (var i = 1; i < 26; i++) {
-            $('.slider').append("<li><a href=\"\">example " + i + "</a></li>");
+          $.getJSON("data.js", function(result){
+            data = result;
+          };
+
+          for (var i = 0; i < result.length; i++){
+            var string = JSON.stringify(result[i]);
+            var parsed = JSON.parse(string);
+
+            $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
           }
 
           $('.slider').slick({
