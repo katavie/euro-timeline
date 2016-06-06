@@ -21,27 +21,13 @@
             </nav>
         </header>
 
-        <aside id="contents">
-            <ul id="vertical">
-            </ul>
-        </aside>
-
-        <!--sections-->
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="slick.js"></script>
         <script>
         $(document).ready(function(){
-          $.getJSON("data.js", function(result){
-            for (var i = 0; i < result.length; i++){
-              var string = JSON.stringify(result[i]);
-              var parsed = JSON.parse(string);
-
-              $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
-              $('#vertical').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
-              $('body').append("<section class=\"fullpage\" id=\"" + parsed.number + "\"><h2>" + parsed.event + "</h2><p class=\"summary\">" + parsed.summary + "</p></section>");
-            }
-          });
+          for (var i = 1; i < 26; i++) {
+            $('.slider').append("<li><a href=\"\">example " + i + "</a></li>");
+          }
 
           $('.slider').slick({
             slidesToShow: 8,
