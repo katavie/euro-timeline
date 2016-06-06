@@ -25,21 +25,18 @@
         <script src="slick.js"></script>
         <script>
         $(document).ready(function(){
-          $.getJSON("data.js", function(result){
-            data = result;
-          };
+            $.getJSON("data.js", function(result){
+              for (var i = 0; i < result.length; i++){
+                var string = JSON.stringify(result[i]);
+                var parsed = JSON.parse(string);
 
-          for (var i = 0; i < data.length; i++){
-            var string = JSON.stringify(result[i]);
-            var parsed = JSON.parse(string);
-
-            $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
-          }
+                $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
+              }
+            });
 
           $('.slider').slick({
             slidesToShow: 8,
             slidesToScroll: 5,
-            // variableWidth: true,
             autoplay: true,
             autoplaySpeed: 3000
           });

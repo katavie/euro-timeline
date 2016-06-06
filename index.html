@@ -41,14 +41,14 @@
               $('#vertical').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
               $('body').append("<section class=\"fullpage\" id=\"" + parsed.number + "\"><h2>" + parsed.event + "</h2><p class=\"summary\">" + parsed.summary + "</p></section>");
             }
-          });
 
-          $('.slider').slick({
-            slidesToShow: 8,
-            slidesToScroll: 5,
-            // variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 3000
+            $('.slider').slick({
+              slidesToShow: 8,
+              slidesToScroll: 5,
+              // variableWidth: true,
+              autoplay: true,
+              autoplaySpeed: 3000
+            });
           });
         });
         </script>
