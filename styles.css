@@ -88,24 +88,24 @@ section {
 
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 3.5rem;
+    right: 3.5rem;
     z-index: 9999;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
-    line-height: 30px;
-    background: #f5f5f5;
-    color: #444;
+    line-height: 1em;
+    background: rgba(0,0,0,.85);
+    color: #eee;
     cursor: pointer;
     border: 0;
-    border-radius: 2px;
+    border-radius: .15rem;
     text-decoration: none;
-    transition: opacity 0.2s ease-out;
+    transition: .25s;
     opacity: 0;
 }
 #back-to-top:hover {
-    background: #e9ebec;
+    background: #000;
 }
 #back-to-top.show {
     opacity: 1;
