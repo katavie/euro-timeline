@@ -21,14 +21,113 @@
             </nav>
         </header>
 
-        <a href="#" id="back-to-top">&uarr;</a>
-
         <aside id="contents">
             <ul id="vertical">
             </ul>
         </aside>
 
-        <!--sections-->
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+        <section>
+            <h2></h2>
+            <p class="summary"></p>
+        </section>
+
+        <a href="#" id="back-to-top">&uarr;</a>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="slick.js"></script>
@@ -41,21 +140,21 @@
 
               $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
               $('#vertical').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
-              $('body').append("<section class=\"fullpage\" id=\"" + parsed.number + "\"><h2>" + parsed.event + "</h2><p class=\"summary\">" + parsed.summary + "</p></section>");
+
+              $('section:nth-of-type(' + parsed.number + ')')
+                .('h2').append(parsed.event)
+                .('p').append(parsed.summary);
             }
 
             $('.slider').slick({
               slidesToShow: 8,
-              slidesToScroll: 5,
-              // variableWidth: true,
-              autoplay: true,
-              autoplaySpeed: 3000
+              slidesToScroll: 5
             });
           });
         });
 
         if ($('#back-to-top').length) {
-          var scrollTrigger = 100, // px
+          var scrollTrigger = 200, // px
           backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {

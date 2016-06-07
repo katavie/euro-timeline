@@ -21,6 +21,7 @@
         "number": 4,
         "year": "900s",
         "event": "Feudalism Develops",
+        "long": 1,
         "summary": "Feudalism, developed in response to the need for protection of people and their lands, was the social and political system of medieval Europe. A system of mutual obligations defined by feudal contracts bound all members of society together. The monarch granted fiefs, or land, who then distributed them to lesser lords. Vassals, or people to whom fiefs were given, owed loyalty and military service to their lords in exchange for land and protection. Serfs and peasants worked on the land while receiving protection and shelter on their lord’s self-sufficient, isolated manor. The feudal system dominated Europe in conjunction with the manor economy for several centuries until various factors, including the Black Death, Crusades, and political changes in England and France, brought about its downfall."
     },
     {
@@ -44,74 +45,98 @@
     {
         "number": 8,
         "year": "1324",
-        "event": "Mansa Musa Makes Pilgrimage to Mecca"
+        "event": "Mansa Musa Makes Pilgrimage to Mecca",
+        "summary": "In 1312, Mansa Musa became the ruler of the West African kingdom of Mali. He granted his subjects religious tolerance, but was a devout Muslim himself. He completed one of the Five Pillars of Islam by making a pilgrimage to Mecca. He improved diplomatic and economic relations with Muslim states and brought back scholars, architects, and teachers, who built an Islamic university in Timbuktu."
     },
     {
         "number": 9,
-        "event": "Renaissance Begins"
+        "year": "1300s",
+        "event": "Renaissance Begins",
+        "long": 1
     },
     {
         "number": 10,
-        "event": "Joan of Arc Leads the French"
+        "year": "1429",
+        "event": "Joan of Arc Leads the French",
+        "summary": "During the Hundred Years’ War, 17-year-old peasant Joan of Arc told Charles VII that God had called her to save France. She led a French army to a series of victories, but was then seized by enemies, tried for witchcraft, and burned at stake. The French saw Joan as a martyr, and with renewed motivation, attacked English lands. Later, Joan of Arc was canonized as a saint by the Church."
     },
     {
         "number": 11,
-        "event": "Gutenberg's Bible is Printed"
+        "year": "1455",
+        "event": "Gutenberg's Bible is Printed",
+        "summary": "After experimenting with printing methods for several years, Johann Gutenberg of Mainz, Germany, created his magnum opus, a Bible, using the techniques he perfected. Gutenberg’s system for casting movable type sparked a revolution across Europe. Prior to Gutenberg, each book was painstakingly copied by hand. Books and knowledge were now more accessible by people of all social classes, leading to increases in literacy rates and broadening of worldviews."
     },
     {
         "number": 12,
+        "year": "1492",
         "event": "Spanish Reconquista / Columbus"
     },
     {
         "number": 13,
+        "year": "1501",
         "event": "Michelangelo's David"
     },
     {
         "number": 14,
-        "event": "Luther Posts his 95 Theses"
+        "year": "1517",
+        "event": "Luther Posts his 95 Theses",
+        "long": 1
     },
     {
         "number": 15,
+        "year": "1522",
         "event": "Magellan's Crew Finishes Trip"
     },
     {
         "number": 16,
+        "year": "1633",
         "event": "Galileo's Trial"
     },
     {
         "number": 17,
-        "event": "English Civil War"
+        "year": "1642",
+        "event": "English Civil War",
+        "long": 1
     },
     {
         "number": 18,
+        "year": "1685",
         "event": "Louis XIV Revokes the Edict of Nantes"
     },
     {
         "number": 19,
+        "year": "1688",
         "event": "The Glorious Revolution"
     },
     {
         "number": 20,
+        "year": "1690",
         "event": "Two Treatises of Government"
     },
     {
         "number": 21,
+        "year": "1748",
         "event": "Montesquieu's \"Spirit of Laws\""
     },
     {
         "number": 22,
-        "event": "The Storming of the Bastille"
+        "year": "1789",
+        "event": "The Storming of the Bastille",
+        "long": 1
     },
     {
         "number": 23,
+        "year": "1793",
         "event": "The Reign of Terror"
     },
     {
         "number": 24,
+        "year": "1804",
         "event": "Napoleon Takes Power / Waterloo"
     },
     {
         "number": 25,
+        "year": "1848",
         "event": "The Communist Manifesto"
     }
 ]
