@@ -122,6 +122,19 @@ section:nth-child(even) .content {
     margin: .75rem 0;
 }
 
+.read-more {
+    display: inline-block;
+    padding: .25rem .5rem;
+    background: #f70;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .5rem;
+    transition: .25s;
+}
+.read-more:hover, .read-more:active {
+    background: #b35300;
+}
+
 #back-to-top {
     position: fixed;
     bottom: 3.5rem;
