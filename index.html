@@ -21,36 +21,33 @@
             </nav>
         </header>
 
-        <aside id="contents">
-            <ul id="vertical">
-            </ul>
-        </aside>
-
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div id="timeline">
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </div>
 
         <a href="#" id="back-to-top">&uarr;</a>
 
@@ -64,22 +61,21 @@
               var parsed = JSON.parse(string);
 
               $('.slider').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
-              $('#vertical').append("<li><a href=\"#" + parsed.number + "\">" + parsed.year + "</a></li>");
 
               var section = $('section:nth-of-type(' + parsed.number + ')');
               section.attr('id', parsed.number);
-              section.append("<h2>" + parsed.event + "</h2><p class=\"summary\">" + parsed.summary + "</p>");
+              section.append("<div class=\"year\">" + parsed.year + "</div>\n<div class=\"content\">\n<h2>" + parsed.event + "</h2>\n<p class=\"summary\">" + parsed.summary + "</p></div>");
             }
 
             $('.slider').slick({
               slidesToShow: 8,
-              slidesToScroll: 5
+              slidesToScroll: 8
             });
           });
         });
 
         if ($('#back-to-top').length) {
-          var scrollTrigger = 200, // px
+          var scrollTrigger = 400,
           backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
