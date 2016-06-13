@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #224;
+    background-color: #f5f5fa;
 }
 
 h1, h2, h3 {
@@ -14,8 +14,9 @@ h1, h2, h3 {
 }
 
 header {
+    background-color: #224;
     text-align: center;
-    padding-top: 7.5rem;
+    padding: 7.5rem 0;
 }
 
 header h1 {
@@ -27,22 +28,24 @@ header h1 {
 
 .slider {
     width: 80%;
-    margin: 7.5rem auto;
+    margin: 7.5rem auto 0;
 }
 
 .slider li {
     background-color: #eee;
-    padding: 1rem;
     margin: 0 1rem;
 }
 
 .slider a {
     text-decoration: none;
     font: 800 1.25rem/1em Raleway;
+    display: inline-block;
+    padding: .85rem 1rem 1rem;
+    width: 100%;
 }
 
 h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -52,6 +55,8 @@ h3 {
 
 #timeline {
     position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #timeline::before {
@@ -96,7 +101,7 @@ section:last-child {
 .content {
     position: relative;
     width: 42.5%;
-    padding: 2.5rem 2.5rem 1.5rem;
+    padding: 2rem 2rem 1rem;
     color: #111;
     background-color: #ddd;
     border-radius: 1rem;
@@ -113,8 +118,8 @@ section:nth-child(even) .content {
 }
 
 .summary {
-    font: normal 1.35rem/1.35em Lora;
-    margin: 1rem 0;
+    font: normal 1.25rem/1.35em Lora;
+    margin: .75rem 0;
 }
 
 #back-to-top {
