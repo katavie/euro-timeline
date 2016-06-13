@@ -57,6 +57,27 @@ h2 {
 
 #fullpage {
     border-left: 1rem solid #d09f04;
+    padding-bottom: 2.5rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.class {
+    display: inline-block;
+    width: 10rem;
+    vertical-align: bottom;
+}
+
+#bourgeois {
+    height: 25rem;
+    background: red;
+}
+
+#proletarians {
+    height: 15rem;
+    background: orange;
 }
 
 #back-to-top {
