@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>World History Timeline</title>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+        <link href="communist-styles.css" rel="stylesheet" text="text/css">
+    </head>
+
+    <body>
+        <div id="fullpage">
+            <header class="section active">
+                <h1 id="ribbon">
+                    <span id="content">The Communist Manifesto</span>
+                </h1>
+                <h3 id="subtitle">Karl Marx & Friedrich Engels<br>(1848)</h3>
+            </header>
+
+            <section class="section">
+                <h2>Bourgeois & Proletarians</h2>
+            </section>
+            <section class="section">
+                <h2>Proletarians & Communists</h2>
+            </section>
+            <section class="section">
+                <h2>Socialist & Communist Literature</h2>
+            </section>
+            <section class="section">
+                <h2>Position of the Communists in Relation to the Various Opposition Parties</h2>
+            </section>
+        </div>
+
+        <a href="#" id="back-to-top">&uarr;</a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="fullpage.js"></script>
+        <script>
+        $(document).ready(function() {
+		  $('#fullpage').fullpage({
+		    scrollBar: true
+		  });
+		});
+
+        if ($('#back-to-top').length) {
+          var scrollTrigger = 400,
+          backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+              $('#back-to-top').addClass('show');
+            } else {
+              $('#back-to-top').removeClass('show');
+            }
+          };
+          backToTop();
+          $(window).on('scroll', function () {
+            backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+              scrollTop: 0
+            }, 700);
+          });
+        }
+        </script>
+    </body>
+</html>
