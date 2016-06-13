@@ -152,6 +152,6 @@
         "number": 25,
         "year": "1848",
         "event": "The Communist Manifesto",
-        "summary": "In The Communist Manifesto, published in 1848, German philosophers Karl Marx and Friedrich Engels predicted that the working class, or proletariat, would rise against the property owners, or the bourgeoisie. In theory, the struggle would result in a classless society in which the means of production and owned by the whole community. They said that, in a larger sense, all of history was driven by economic and social inequality. They sharply criticized capitalism, which had become the dominant economic system after the Industrial Revolution, claiming that while some prospered, the vast majority suffered in poverty."
+        "summary": "In The Communist Manifesto, published in 1848, German philosophers Karl Marx and Friedrich Engels predicted that the working class, or proletariat, would rise against the property owners, or the bourgeoisie. In theory, the struggle would result in a classless society in which the means of production and owned by the whole community. They said that, in a larger sense, all of history was driven by economic and social inequality. They sharply criticized capitalism, which had become the dominant economic system after the Industrial Revolution, claiming that while some prospered, the vast majority suffered in poverty. <a href=\"communist-manifesto\" class="read-more">Read more</a>"
     }
 ]
