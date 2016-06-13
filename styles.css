@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f5f5fa;
+    background-color: #224;
 }
 
 h1, h2, h3 {
@@ -14,7 +14,6 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: #224;
     text-align: center;
     padding: 7.5rem 0;
 }
@@ -55,8 +54,9 @@ h3 {
 
 #timeline {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
+    background-color: #f5f5fa;
+    width: 100%;
+    padding: 0 5%;
 }
 
 #timeline::before {
