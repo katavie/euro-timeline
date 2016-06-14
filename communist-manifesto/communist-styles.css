@@ -13,6 +13,7 @@ header {
     text-align: center;
     padding-top: 10rem;
     margin-bottom: 2.5rem;
+    background: url('revolution-fists.png');
 }
 
 h1, h2, h3 {
@@ -60,24 +61,8 @@ h2 {
     padding-bottom: 2.5rem;
 }
 
-.container {
-    text-align: center;
-}
-
-.class {
-    display: inline-block;
-    width: 10rem;
-    vertical-align: bottom;
-}
-
-#bourgeois {
-    height: 25rem;
-    background: red;
-}
-
-#proletarians {
-    height: 15rem;
-    background: orange;
+section img {
+    display: block;
 }
 
 #back-to-top {
